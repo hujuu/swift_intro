@@ -5,3 +5,4 @@ import UIKit
 var str = "Hello, playground"
 
 print(1 + 1)
+print(5-3)
