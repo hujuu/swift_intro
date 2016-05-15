@@ -59,3 +59,23 @@ var number:Int = 3
 //練習問題4-1
 var bodyTemp:Double = 36
 bodyTemp = 36.5
+
+
+//var batteryRemaining = 18
+if batteryRemaining <= 20{
+    print("バッテリー残量が少なくなっています")
+}
+
+var num = -1
+
+if num > 0{
+    print("\(num)は正の数です")
+}else{
+    print("\(num)は負の数か0です")
+}
+
+if batteryRemaining <= 10{
+    print("10%以下です")
+} else if batteryRemaining <= 20{
+    print("20%以下です")
+}
