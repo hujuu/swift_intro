@@ -101,6 +101,7 @@ print(tests)
 
 print(todos[0])
 
+
 var numberOfTires = ["車":4,
                      "バイク":2,
                      "船":0]
@@ -112,3 +113,43 @@ print(numberOfTires["車"])
 numberOfTires["三輪車"] = 3
 numberOfTires["車"] = nil
 
+//練習問題4-3
+var score = ["国語":95,"数学":70,"英語":80]
+score["数学"] = 100
+
+func kuku2dan(){
+    for x in 1...9 {
+        print(x * 2)
+    }
+}
+kuku2dan()
+
+func kuku(dan:Int) {
+    for x in 1...9{
+        print(dan * x)
+    }
+}
+kuku(2)
+kuku(3)
+
+//三角形の面積の計算
+//func areaOfTriangleWithBase(base:Int, andHeight:Int) {
+//    print(base * andHeight / 2)
+//}
+
+func areaOfTriangleWithBase(base:Int, andHeight height:Int) -> Int {
+    let result = base * height / 2
+    return result
+}
+
+var area = areaOfTriangleWithBase(3, andHeight: 4)
+print (area)
+
+//練習問題4-4
+func areaOfTSquareWithBase(base:Int) -> Int {
+    let result = base * base
+    return result
+}
+
+var area1 = areaOfTSquareWithBase(3)
+print(area1)
