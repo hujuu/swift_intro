@@ -88,3 +88,27 @@ print(todos[0])
 for task in todos {
     print(task)
 }
+
+//problem4-2
+var test = [95,70,80]
+var tests = 0
+
+for point in test{
+    print(point)
+    tests = tests + point
+}
+print(tests)
+
+print(todos[0])
+
+var numberOfTires = ["車":4,
+                     "バイク":2,
+                     "船":0]
+
+print(numberOfTires["車"])
+numberOfTires["車"] = 6
+print(numberOfTires["車"])
+
+numberOfTires["三輪車"] = 3
+numberOfTires["車"] = nil
+
