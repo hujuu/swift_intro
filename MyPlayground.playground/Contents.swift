@@ -79,3 +79,12 @@ if batteryRemaining <= 10{
 } else if batteryRemaining <= 20{
     print("20%以下です")
 }
+
+//配列
+var todos = ["ジョギングする","選択する","掃除をする"]
+
+print(todos[0])
+
+for task in todos {
+    print(task)
+}
