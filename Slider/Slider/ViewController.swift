@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Hello
+//  Slider
 //
-//  Created by Ken Nakai on 2016/05/15.
-//  Copyright © 2016年 kenakai. All rights reserved.
+//  Created by Ken Nakai on 2016/05/19.
+//  Copyright © 2016年 mycompany. All rights reserved.
 //
 
 import UIKit
@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
-    @IBAction func sayHello() {
-        label.text = "こんにちは"
+    @IBAction func showValue(sender: UISlider) {
+        label.text = "\(sender.value)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
