@@ -13,6 +13,7 @@
 		EB247C981CECDCCF005BC777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB247C971CECDCCF005BC777 /* Assets.xcassets */; };
 		EB247C9B1CECDCCF005BC777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB247C991CECDCCF005BC777 /* LaunchScreen.storyboard */; };
 		EB247CA31CECDD00005BC777 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB247CA21CECDD00005BC777 /* dog.jpg */; };
+		EBF2F4C61CF12C98006FE064 /* jira_logo_56h.png in Resources */ = {isa = PBXBuildFile; fileRef = EBF2F4C51CF12C98006FE064 /* jira_logo_56h.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EB247C9A1CECDCCF005BC777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB247C9C1CECDCCF005BC777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB247CA21CECDD00005BC777 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		EBF2F4C51CF12C98006FE064 /* jira_logo_56h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jira_logo_56h.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				EB247CA21CECDD00005BC777 /* dog.jpg */,
+				EBF2F4C51CF12C98006FE064 /* jira_logo_56h.png */,
 				EB247C901CECDCCE005BC777 /* AppDelegate.swift */,
 				EB247C921CECDCCF005BC777 /* ViewController.swift */,
 				EB247C941CECDCCF005BC777 /* Main.storyboard */,
@@ -129,6 +132,7 @@
 				EB247CA31CECDD00005BC777 /* dog.jpg in Resources */,
 				EB247C9B1CECDCCF005BC777 /* LaunchScreen.storyboard in Resources */,
 				EB247C981CECDCCF005BC777 /* Assets.xcassets in Resources */,
+				EBF2F4C61CF12C98006FE064 /* jira_logo_56h.png in Resources */,
 				EB247C961CECDCCF005BC777 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
