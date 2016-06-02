@@ -33,7 +33,7 @@ class ListViewController: UITableViewController, NSXMLParserDelegate{
     
     func startDownload() {
         self.items = []
-        if let url = NSURL(string: "http://feeds.lifehacker.jp/rss/lifehacker/index.xml"){
+        if let url = NSURL(string: "http://global.yamaha-motor.com/jp/rss/update.xml"){
             if let parser = NSXMLParser(contentsOfURL: url){
                 self.parser = parser
                 self.parser.delegate = self

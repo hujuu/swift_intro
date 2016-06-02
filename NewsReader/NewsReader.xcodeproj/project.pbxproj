@@ -13,10 +13,11 @@
 		EB83E0ED1CF3743100A07F51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB83E0EC1CF3743100A07F51 /* Assets.xcassets */; };
 		EB83E0F01CF3743100A07F51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB83E0EE1CF3743100A07F51 /* LaunchScreen.storyboard */; };
 		EB83E0F81CF374E000A07F51 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83E0F71CF374E000A07F51 /* ListViewController.swift */; };
+		EBBBC73C1D008893001630E2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBC73B1D008893001630E2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB802F5D1CFB451D00BF82DA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EB802F5D1CFB451D00BF82DA /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 		EB83E0E21CF3743100A07F51 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB83E0E51CF3743100A07F51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB83E0EA1CF3743100A07F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		EB83E0EF1CF3743100A07F51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB83E0F11CF3743100A07F51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB83E0F71CF374E000A07F51 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		EBBBC73B1D008893001630E2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,6 @@
 		EB83E0D91CF3743100A07F51 = {
 			isa = PBXGroup;
 			children = (
-				EB802F5D1CFB451D00BF82DA /* Item.swift */,
 				EB83E0E41CF3743100A07F51 /* NewsReader */,
 				EB83E0E31CF3743100A07F51 /* Products */,
 			);
@@ -57,9 +58,11 @@
 		EB83E0E41CF3743100A07F51 /* NewsReader */ = {
 			isa = PBXGroup;
 			children = (
+				EB802F5D1CFB451D00BF82DA /* Item.swift */,
 				EB83E0E51CF3743100A07F51 /* AppDelegate.swift */,
 				EB83E0E91CF3743100A07F51 /* Main.storyboard */,
 				EB83E0F71CF374E000A07F51 /* ListViewController.swift */,
+				EBBBC73B1D008893001630E2 /* DetailViewController.swift */,
 				EB83E0EC1CF3743100A07F51 /* Assets.xcassets */,
 				EB83E0EE1CF3743100A07F51 /* LaunchScreen.storyboard */,
 				EB83E0F11CF3743100A07F51 /* Info.plist */,
@@ -142,6 +145,7 @@
 				EB83E0F81CF374E000A07F51 /* ListViewController.swift in Sources */,
 				EB802F5E1CFB451D00BF82DA /* Item.swift in Sources */,
 				EB83E0E61CF3743100A07F51 /* AppDelegate.swift in Sources */,
+				EBBBC73C1D008893001630E2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
