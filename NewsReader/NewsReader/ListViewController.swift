@@ -69,4 +69,12 @@ class ListViewController: UITableViewController, NSXMLParserDelegate{
         self.tableView.reloadData()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let indexPath = self.tableView.indexPathForSelectedRow{
+            let item = items[indexPath.row]
+            let controller = segue.destinationViewController as! DetailViewController
+            controller.title = item.title
+            controller.link = item.link
+        }
+    }
 }

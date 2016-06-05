@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ntm-Mx-cXK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dc1-rg-voV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--一覧-->
         <scene sceneID="PXs-o5-f25">
             <objects>
                 <tableViewController id="ntm-Mx-cXK" customClass="ListViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="0w7-Z5-0va" style="IBUITableViewCellStyleDefault" id="MtM-db-vTD">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MtM-db-vTD" id="apx-t0-8iN">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -25,11 +25,14 @@
                                             <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DZA-pZ-YTo" kind="show" id="Qkt-nH-mub"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -37,8 +40,60 @@
                             <outlet property="delegate" destination="ntm-Mx-cXK" id="7jl-aC-6Wg"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="一覧" id="n8j-nX-J48"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L99-e6-Omy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="453"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dPV-dr-RGw">
+            <objects>
+                <viewController id="DZA-pZ-YTo" customClass="DetailViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kzV-El-1Sk"/>
+                        <viewControllerLayoutGuide type="bottom" id="wQc-qc-xOk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eRz-ab-KfT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8X-a5-evi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u8X-a5-evi" firstAttribute="bottom" secondItem="wQc-qc-xOk" secondAttribute="top" id="BiA-kK-gf0"/>
+                            <constraint firstItem="u8X-a5-evi" firstAttribute="top" secondItem="eRz-ab-KfT" secondAttribute="top" id="c5X-V3-RQe"/>
+                            <constraint firstItem="u8X-a5-evi" firstAttribute="leading" secondItem="eRz-ab-KfT" secondAttribute="leading" id="pLh-QC-SyV"/>
+                            <constraint firstAttribute="trailing" secondItem="u8X-a5-evi" secondAttribute="trailing" id="uIo-Vg-sBt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="u8X-a5-evi" id="3W4-0B-h7H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JiV-MF-Yxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lOd-Fp-FqL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dc1-rg-voV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HSK-hw-BsN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ntm-Mx-cXK" kind="relationship" relationship="rootViewController" id="L2E-K2-x5P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvy-99-RdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="362" y="453"/>
         </scene>
